@@ -49,3 +49,29 @@ Step 5: Prediction Function
 New song rows can be inputted to the model, with predicted popularity explained by the most influential features.
 
 📂 Visuals & Assets
+### 🎵 Genre Distribution Over Time
+![Genre Over Time](visualizations/visualization_1.png)
+
+### ⚡ Energy vs. Popularity
+![Energy vs Popularity](visualizations/visualization_2.png)
+
+### 🎛 Clustering of Songs
+![KMeans Clusters](visualizations/visualization_3.png)
+
+### 🎚 Feature Correlation Matrix
+![Correlation Matrix](visualizations/visualization_4.png)
+
+### 📈 Popularity Trends by Year
+![Popularity by Year](visualizations/visualization_5.png)
+
+
+| Feature                             | Result / Insight                                                                 |
+|-------------------------------------|----------------------------------------------------------------------------------|
+| Most Popular Genre (by average pop)| Dance Pop                                                                        |
+| Year with Peak Popularity           | 2016                                                                             |
+| Top Contributing Feature (Popularity Prediction) | Energy                                                      |
+| Model Used                          | Random Forest Regressor                                                          |
+| Model R² Score                      | 0.74                                                                             |
+| Key Clusters Identified             | 5 major clusters based on energy, valence, and tempo                            |
+| Dashboard Functionalities           | Dropdown by genre, year range slider, multi-artist filter, cluster visualizer   |
+
