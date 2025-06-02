@@ -49,7 +49,7 @@ Step 5: Prediction Function
 New song rows can be inputted to the model, with predicted popularity explained by the most influential features.
 
 📂 Visuals & Assets
-### 🎵 Genre Distribution Over Time
+### 🎵 Distribution Of Each Feature
 ![Genre Over Time](visualizations/visualization_1.png)
 
 ### ⚡ Energy vs. Popularity
