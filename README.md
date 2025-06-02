@@ -58,7 +58,7 @@ New song rows can be inputted to the model, with predicted popularity explained 
 ### 🎛 Clustering of Songs
 ![KMeans Clusters](visualizations/visualization_3.png)
 
-### 🎚 Feature Correlation Matrix
+### 🎚 Mean Features from 1956-2019
 ![Correlation Matrix](visualizations/visualization_4.png)
 
 ### 📈 Popularity Trends by Year
