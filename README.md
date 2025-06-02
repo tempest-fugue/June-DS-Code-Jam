@@ -61,7 +61,7 @@ New song rows can be inputted to the model, with predicted popularity explained 
 ### 🎚 Mean Features from 1956-2019
 ![Correlation Matrix](visualizations/visualization_4.png)
 
-### 📈 Popularity Trends by Year
+### 📈 Correlation Matrix for Dataset's Numeric Columns
 ![Popularity by Year](visualizations/visualization_5.png)
 
 
