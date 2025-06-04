@@ -14,17 +14,21 @@ Using a publicly available dataset of over 2,000 top Spotify tracks from Kaggle,
 🔍 Human-Centered Analysis: Beyond metrics, we interpret why the model performs the way it does—its strengths, its blind spots, and real-world usability.
 
 🧠 Industry-Ready Techniques Demonstrated
-| Technique Category        | Method / Example                                                                 |
-|--------------------------|-----------------------------------------------------------------------------------|
-| Linear Algebra           | Feature vector construction, PCA for dimensionality reduction                    |
-| Vector Operations        | K-means distance calculations, cosine similarity in clustering                   |
-| Vector Distance          | Euclidean distances used in K-means                                              |
-| Matrix Operations        | Feature normalization, correlation matrices                                      |
-| Supervised Learning      | Random Forest Regressor to predict popularity                                    |
-| Model Evaluation         | R² score, residual plots, SHAP values for interpretability                       |
-| Visualization            | Plotly bar plots, heatmaps, scatter plots, cluster graphs                        |
-| Pipeline                 | End-to-end: data cleaning → feature selection → modeling → prediction → dashboard|
-| Feature Engineering      | Year bucketing, one-hot encoding for genres, scaling numerical features          |
+| Technique Category       | Method / Example                                                                  |
+| ------------------------ | --------------------------------------------------------------------------------- |
+| **Linear Algebra**       | Feature vector construction, PCA for dimensionality reduction                     |
+| **Vector Operations**    | K-means distance calculations, cosine similarity in clustering                    |
+| **Vector Distance**      | Euclidean distances used in K-means                                               |
+| **Matrix Operations**    | Feature normalization, correlation matrices                                       |
+| **Supervised Learning**  | Random Forest Regressor to predict popularity                                     |
+| **Model Evaluation**     | R² score, residual plots, SHAP values for interpretability                        |
+| **Visualization**        | Plotly bar plots, heatmaps, scatter plots, cluster graphs                         |
+| **Pipeline**             | End-to-end: data cleaning → feature selection → modeling → prediction → dashboard |
+| **Feature Engineering**  | Year bucketing, one-hot encoding for genres, scaling numerical features           |
+| **EDA**                  | Descriptive statistics, outlier detection, genre counts                           |
+| **Dashboard Planning**   | Structured for clean integration into Plotly Dash (with toggles and filters)      |
+| **Context-Aware Design** | Considered RAG-style context planning for chatbot integration                     |
+
 
 🧪 How It Works
 Step 1: Data Cleaning & Exploration
@@ -49,20 +53,38 @@ Step 5: Prediction Function
 New song rows can be inputted to the model, with predicted popularity explained by the most influential features.
 
 📂 Visuals & Assets
-### 🎵 Distribution Of Each Feature
-![Genre Over Time](visualizations/visualization_1.png)
+## 🎨 Visuals & Assets Screenshots
 
-### ⚡ Energy vs. Popularity
-![Energy vs Popularity](visualizations/visualization_2.png)
+### 🎼 Distribution of Musical Features
+![Distribution](assets/distribution.png)
 
-### 🎛 Clustering of Songs
-![KMeans Clusters](visualizations/visualization_3.png)
+### 📊 Mood Score Distribution
+![Mood](assets/mood.png)
 
-### 🎚 Mean Features from 1956-2019
-![Correlation Matrix](visualizations/visualization_4.png)
+### 🧠 Random Forest Genre Confusion Matrix
+![Confusion Matrix](assets/random%20forest%20confusion%20matrix.png)
 
-### 📈 Correlation Matrix for Dataset's Numeric Columns
-![Popularity by Year](visualizations/visualization_5.png)
+### 🧩 Genre-Based 3D Plotly Visualization
+![Plotly Genre](assets/plotly%20genre)
+
+### 📈 Feature Distributions (Histograms)
+![Feature Histograms](assets/visualization_1.png)
+
+### 📉 Feature Distributions (Boxplots)
+![Feature Boxplots](assets/visualization_2.png)
+
+### 🎤 Top Titles, Artists, and Genres
+![Artist & Genre Plots](assets/visualization_3.png)
+
+### ⏳ Feature Trends Over Time
+![Temporal Trends](assets/visualization_4.png)
+
+### 🔥 Correlation Heatmap
+![Correlation Heatmap](assets/visualization_5.png)
+
+### 🔗 Pairwise Feature Relationships
+![Pairplot](assets/visualization_6.png)
+
 
 
 | Feature                             | Result / Insight                                                                 |
@@ -75,9 +97,33 @@ New song rows can be inputted to the model, with predicted popularity explained 
 | Key Clusters Identified             | 5 major clusters based on energy, valence, and tempo                            |
 | Dashboard Functionalities           | Dropdown by genre, year range slider, multi-artist filter, cluster visualizer   |
 
+🧪 Model Results
+| Model               | Accuracy | F1 Score | AUC-ROC | Training Time (s) |
+| ------------------- | -------- | -------- | ------- | ----------------- |
+| Gradient Boosting   | 0.694    | 0.671    | 0.939   | 2.64              |
+| Random Forest       | 0.689    | 0.655    | 0.943   | 0.27              |
+| Decision Tree       | 0.680    | 0.653    | 0.803   | 0.01              |
+| CatBoostClassifier  | 0.676    | 0.645    | 0.941   | 4.76              |
+| Logistic Regression | 0.571    | 0.595    | 0.930   | 0.04              |
+
+🧪 Conclusion 
+This project explores music trends through the lens of Spotify song data, using features like energy, danceability, speechiness, and popularity. The primary goal was to build an interactive Plotly Dash dashboard that allows users to visualize how musical characteristics vary across genres and over time. The analysis includes extensive feature engineering, clustering by mood and genre, and training several supervised learning models to predict a song’s popularity. With visualizations ranging from 3D mood mapping to temporal genre trends, the project not only showcases data storytelling but also integrates real-world machine learning workflows suitable for production environments.
+
 🤝 Contributing
 If you’d like to extend this project or automate more insight generation, feel free to fork and submit a pull request.
 
+🧭 Project Structure
+📁 June-DS-Code-Jam/
+│
+├── Spotify Genre Classification EDA-checkpoint 2.0.ipynb  ← Feature engineering & model pipeline
+├── README.md                                               ← You're here
+├── /visualizations                                         ← Graph assets
+├── /models                                                 ← Trained model artifacts
+└── /data                                                   ← Spotify song dataset
+
+📚 Data Source & Challenge Criteria
+This project was built as part of a bootcamp capstone challenge.
+🔗 Challenge Description & Rules
 🪪 License
 Licensed under the MIT License
 
