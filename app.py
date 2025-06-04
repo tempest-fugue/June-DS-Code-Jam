@@ -7,6 +7,7 @@ import kagglehub
 from kagglehub import KaggleDatasetAdapter
 import joblib
 import difflib
+import os
 
 # Load data
 df = pd.read_csv("data/spotify_final.csv")
