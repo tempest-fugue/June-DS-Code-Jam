@@ -14,11 +14,17 @@ df = pd.read_csv("data/spotify_final.csv")
 
 # Build model table of metrics
 model_scores = pd.DataFrame({
-    'Model': ['Random Forest', 'Logistic Regression', 'Gradient Boosting', 'Decision Tree'],
-    'Accuracy': [0.470, 0.388, 0.420, 0.379],
-    'F1 Score': [0.428, 0.405, 0.379, 0.381],
-    'ROC AUC': [0.836, 0.814, 0.809, 0.629],
-    'Training Time (s)': [0.4353, 0.0639, 3.8902, 0.0835]
+    'Model': [
+        'Gradient Boosting', 
+        'Random Forest', 
+        'Decision Tree', 
+        'CatBoostClassifier', 
+        'Logistic Regression'
+    ],
+    'Accuracy': [0.694, 0.689, 0.680, 0.676, 0.571],
+    'F1 Score': [0.671, 0.655, 0.653, 0.645, 0.595],
+    'AUC-ROC': [0.939, 0.943, 0.803, 0.941, 0.930],
+    'Training Time (s)': [2.6375, 0.2671, 0.0083, 4.7575, 0.0387]
 })
 
 # Load saved model + preprocessing tools
