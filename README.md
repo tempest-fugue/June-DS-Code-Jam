@@ -52,38 +52,40 @@ With K-means, we grouped songs into clusters that highlight similarities across 
 Step 5: Prediction Function
 New song rows can be inputted to the model, with predicted popularity explained by the most influential features.
 
-📂 Visuals & Assets
+## 🎨 Visuals & Assets Screenshots
 ## 🎨 Visuals & Assets Screenshots
 
 ### 🎼 Distribution of Musical Features
-![Distribution](assets/distribution.png)
+![Distribution](visualizations/distribution.png)
 
 ### 📊 Mood Score Distribution
-![Mood](assets/mood.png)
+![Mood](visualizations/mood.png)
 
 ### 🧠 Random Forest Genre Confusion Matrix
-![Confusion Matrix](assets/random%20forest%20confusion%20matrix.png)
+![Confusion Matrix](visualizations/random%20forest%20confusion%20matrix.png)
 
 ### 🧩 Genre-Based 3D Plotly Visualization
-![Plotly Genre](assets/plotly%20genre)
+![Plotly Genre](visualizations/plotly%20genre)
 
 ### 📈 Feature Distributions (Histograms)
-![Feature Histograms](assets/visualization_1.png)
+![Feature Histograms](visualizations/visualization_1.png)
 
 ### 📉 Feature Distributions (Boxplots)
-![Feature Boxplots](assets/visualization_2.png)
+![Feature Boxplots](visualizations/visualization_2.png)
 
 ### 🎤 Top Titles, Artists, and Genres
-![Artist & Genre Plots](assets/visualization_3.png)
+![Artist & Genre Plots](visualizations/visualization_3.png)
 
 ### ⏳ Feature Trends Over Time
-![Temporal Trends](assets/visualization_4.png)
+![Temporal Trends](visualizations/visualization_4.png)
 
 ### 🔥 Correlation Heatmap
-![Correlation Heatmap](assets/visualization_5.png)
+![Correlation Heatmap](visualizations/visualization_5.png)
 
 ### 🔗 Pairwise Feature Relationships
-![Pairplot](assets/visualization_6.png)
+![Pairplot](visualizations/visualization_6.png)
+
+
 
 
 
