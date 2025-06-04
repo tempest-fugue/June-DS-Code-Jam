@@ -68,8 +68,8 @@ app.layout = dbc.Container([
 
 # Section 1: Model Performance and Prediction
 def model_performance_layout():
-    fig = px.bar(model_scores, x='Model', y=['Accuracy', 'F1 Score', 'ROC AUC'],
-                 barmode='group', title='Model Performance Comparison')
+    fig = px.bar(model_scores, x='Model', y=['Accuracy', 'F1 Score', 'AUC-ROC'],
+             barmode='group', title='Model Performance Comparison')
 
     return html.Div([
         dcc.Graph(figure=fig),
