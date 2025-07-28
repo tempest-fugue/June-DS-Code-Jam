@@ -6,6 +6,7 @@ Using a publicly available dataset of over 2,000 top Spotify tracks from Kaggle,
 
 🚀 Project Highlights
 🎛 Interactive Dashboard: Built with Plotly Dash, users can filter by genre, year, and artist to explore the evolution of musical characteristics.
+Deployed via Render: https://june-ds-code-jam.onrender.com
 
 🧠 Machine Learning Model: A supervised model predicts song popularity and explains feature contributions.
 
